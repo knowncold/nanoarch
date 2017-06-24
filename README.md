@@ -10,7 +10,13 @@ no UI or configuration support.
 Other than `make`, `pkg-config` and a working C99 or C++ compiler, you'll need
 `alsa` and `glfw` development files installed.
 
+需要安装`-dev`的包
+
+	export PKG_CONFIG_PATH=/lib/x86_64-linux-gnu/pkgconfig/glu.pc:/usr/lib64/pkgconfig:/usr/share/pkgconfig
+
+
 ## Running
 
     ./nanoarch <core> <uncompressed content>
 
+	./nanoarch ./libretro.so test.nes
